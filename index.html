@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery slider</title>
+    <style>
+        .gallery-img {
+            width: 900px;
+            height: 600px;
+            object-fit: cover;
+            background-color: tomato;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .btn-container {
+            width: fit-content;
+            position: relative;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .btn {
+            height: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 210px;
+        }
+
+        .btn-left {
+            left: -70px;
+        }
+
+        .btn-right {
+            right: -70px;
+        }
+    </style>
+
+<body>
+    <div class="btn-container">
+        <img src="./image/download.jpeg" class="gallery-img" id="img" />
+
+        <img src="./image/left-arrow.png" class="btn btn-left" onclick="prev()" />
+
+        <img src="./image/right-arrow.png" class="btn btn-right" onclick="next()" />
+
+    </div>
+    
+</body>
+
+</html>
